@@ -28,7 +28,6 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.Footba
 
 
     public class FootballViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        ViewGroup parent;
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view =layoutInflater.inflate(R.layout.item_football, parent, false);
         return new FootballViewHolder(view);
@@ -61,6 +60,19 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.Footba
         }catch (Exception e) {
             Log.d("DetailActivity", "MyErr : " + e);
         }
+    }
+
+    @NonNull
+    @Override
+    public FootballViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        View view =layoutInflater.inflate(R.layout.item_football, parent, false);
+        return new FootballViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull FootballViewHolder holder, int position) {
+
     }
 
     @Override

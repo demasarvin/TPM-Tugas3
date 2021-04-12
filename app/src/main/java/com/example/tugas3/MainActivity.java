@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void showRecyclerList() {
         rv.setLayoutManager(new LinearLayoutManager(this));
-        FootballAdapter footbalAdapter = new FootballAdapter(listTeam,this);
+        FootballAdapter footballAdapter = new FootballAdapter(listTeam,this);
         rv.setAdapter(footballAdapter);
     }
 

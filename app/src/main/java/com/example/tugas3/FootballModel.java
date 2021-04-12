@@ -1,6 +1,20 @@
 package com.example.tugas3;
 
 public class FootballModel {
+    private String image;
+    private String name;
+    private String desc;
+
+    public FootballModel(String image, String name, String desc) {
+        this.image = image;
+        this.name = name;
+        this.desc = desc;
+    }
+
+    public FootballModel(){
+
+    }
+
     public String getImage() {
         return image;
     }
@@ -23,20 +37,6 @@ public class FootballModel {
 
     public void setDesc(String desc) {
         this.desc = desc;
-    }
-
-    private String image;
-    private String name;
-    private String desc;
-
-    public FootballModel(String image, String name, String desc) {
-        this.image = image;
-        this.name = name;
-        this.desc = desc;
-    }
-
-    public FootballModel(){
-
     }
 
 

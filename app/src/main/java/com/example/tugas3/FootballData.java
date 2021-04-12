@@ -41,14 +41,14 @@ public class FootballData {
     };
 
     public static ArrayList<FootballModel> getListData(){
-        FootballModel heroModel = null;
+        FootballModel footballModel = null;
         ArrayList<FootballModel> list = new ArrayList<>();
         for(int i=0;i<image.length;i++){
-            heroModel = new FootballModel();
-            heroModel.setImage(image[i]);
-            heroModel.setName(name[i]);
-            heroModel.setDesc(desc[i]);
-            list.add((FootballModel));
+            footballModel = new FootballModel();
+            footballModel.setImage(image[i]);
+            footballModel.setName(name[i]);
+            footballModel.setDesc(desc[i]);
+            list.add((footballModel));
         }
         return list;
     }
